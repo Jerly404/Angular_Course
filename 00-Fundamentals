@@ -1,0 +1,87 @@
+************************************************************************************
+*                     Angular + TypeScript Fundamentals                            *
+************************************************************************************
+
+  1.  What is Angular?
+  2.  What is the CLI and how does it work?
+  3.  Basic architecture of an Angular project
+  4.  What is TypeScript and why does Angular use it?
+
+************************************************************************************
+1. What is Angular?
+  Angular is a frontend framework created by Google that is used to build complete,
+  well-organized, and scalable web applications.
+
+  It is based on:
+    
+    - Components: The main building blocks of your app (buttons, cards, forms, pages...).
+    - Modules: Group related components.
+    - Services: Reusable logic (APIs, data handling).
+    - Dependency Inhection: Angular privides ready-to-use objects without you having to
+      create them manually.
+    - TypeScript as the main programing language.
+
+  Angular is NOT just HTML + CSS + JS.
+  It is a complete system designed to help you work like a profesional.
+
+************************************************************************************
+2. What is Angular CLI and why is it vital?
+  Angular CLI (Command Line Interface) is the official tool used to:
+    - Create project
+    - Generate components, services, and modules
+    - Run a local server
+    - Build for production
+  
+  Basic commands you should remember:
+    - ng new project
+    - ng serve -o
+    - ng generate component name
+    - ng generate service name
+    - ng build
+
+************************************************************************************
+3. Minium structure of an Angular project
+  When you create a project, you will see something like this:
+
+    src/
+    |
+    |---app/
+    |   |---app.component.ts
+    |   |---app.component.html
+    |   |---app.module.ts
+    |
+    |
+    |
+    |---assets/
+    |---environments/
+    |---main.ts
+
+  Key points:
+
+  app.component.ts
+  Your First component. It has:
+    - selector
+    - template
+    - styles
+    - TypeScript logic
+
+  app.module.ts
+  Root module of the app. It tells Angular which components exist.
+
+  main.ts
+  Entry point.
+
+************************************************************************************
+4. What is TypeScript and why does Angular use it?
+  TypeScript is an improved version of JavaScript, with:
+    - Types
+    - Interfaces
+    - Classes
+    - Decorators
+    - Modules
+
+  Angular uses TypeScript because:
+    - It prevents errors
+    - It makes the code clearer
+    - It allows Angular to understand your components
+    - It enables autocomplete amd real-time error detection (VS Code)
