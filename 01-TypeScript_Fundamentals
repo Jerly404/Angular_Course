@@ -1,0 +1,34 @@
+TypeScript Fundamentals:
+  1. Basic Types
+    What problem do they solve?
+      In JavaScript, you can make mistakes without realizing it.
+      TypeScript forces you to be explicit.
+
+      Primitive types:
+        let name: string = 'jerly';
+        let age: number = 21;
+        let active: boolean = true;
+
+        If you try:
+          age = "twenty-two"; -> //error
+        TypeScript protects you.
+      
+      Typed arrays:
+        let numbers: number[] = [1,2,3];
+        let names: string[] = ["jerly", "404"];
+
+      The any type (use it sparingly)
+        let data: any = 10;
+        data = "text";
+        data = true:
+      In Angular, avoid any.
+
+      Union Types
+        let id: number | string;
+        id = 10;
+        id = "ABC";
+      Very common in Angular.
+
+      Type alias:
+        type ID = number | string;
+        let userId: ID = 5;
