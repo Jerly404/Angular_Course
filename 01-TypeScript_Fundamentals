@@ -32,3 +32,38 @@ TypeScript Fundamentals:
       Type alias:
         type ID = number | string;
         let userId: ID = 5;
+
+  2. Interfaces
+    What is an Interfaces?
+      It is a contract that defines how an object should look.
+
+      Basic interfaces:
+        interface User {
+          id: number;
+          name: string;
+          email: string;
+        }
+        Usage:
+          const user: User = {
+              id: 1,
+              name: "Jerly404",
+              email: "jerly@gmail.com",
+          };
+
+      Optional properties:
+        interface Profile {
+          bio?: string;
+          age?: number;
+        }
+
+      Interfaces with functions:
+        interface Logger {
+          log(message: string): void;
+        }
+
+      Interfaces in Angular
+      They are used for:
+        - API responses
+        - Data models
+        - component inputs
+
