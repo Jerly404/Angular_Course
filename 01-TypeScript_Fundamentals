@@ -133,3 +133,30 @@ TypeScript Fundamentals:
       - services
       - pipes
       - interfaces
+
+  5. Generics
+    What problem do they solve?
+    They allow you to reuse code without losing type safety.
+
+    Generic function
+      function indenty<T>(value: T): T {
+        return value;
+      }
+    identity<number>(10);
+    identity<string>("hello");
+
+    Generic class
+      class Box<T> {
+        constructor(public content: T) {}
+      }
+
+      const TextBox = new Box<string>("message");
+      const numberBox = new Box<number>(100);
+
+    In Angular
+    Generics are used in:
+      - HttpClient
+      - Observables
+      - reusable services
+
+
