@@ -108,4 +108,28 @@ TypeScript Fundamentals:
         ){}
       }
       Very commonly used in Angular.
+  
+  4. Modules
+     What is a module?
+     It allows you to split code into reusable files.
 
+    Export
+    // math.ts
+      export functio add(a: number, b: number): number {
+        return a + b;
+      }
+
+    Import
+    // app.ts
+      import { add } from "./math";
+      add(2,3);
+     
+    Default export
+      export default class Config {}
+
+    In Angular
+    You will use modules for:
+      - components
+      - services
+      - pipes
+      - interfaces
