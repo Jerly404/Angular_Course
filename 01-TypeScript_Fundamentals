@@ -67,3 +67,45 @@ TypeScript Fundamentals:
         - Data models
         - component inputs
 
+  3. Classes
+     Why classes?
+     Angular is based on classes.
+
+     Simple class:
+      class Person {
+        name: string;
+        age: number;
+
+        constructor(name: string, age: number) {
+          this.name = name;
+          this.age = age;
+        }
+
+        introduce(): string {
+          return 'Hello, I am ${this.name}';
+        }
+      }
+
+    Access modifiers:
+      class Account {
+        public owner: string;
+        private balance: number;
+        protected bank: string;
+
+        constructor(owner: string, balance: number){
+          this.owner = owner;
+          this.balance = balance;
+          this.bank = "MyBank";
+        }
+      }
+
+    Short constructor systax:
+      class Product {
+        constructor(
+          public id: number,
+          public name: string,
+          private price: number
+        ){}
+      }
+      Very commonly used in Angular.
+
